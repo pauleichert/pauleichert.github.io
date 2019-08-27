@@ -32,7 +32,8 @@ li {
 }
 
 img {
-    width:100%;height:auto;
+    max-height:75vh; width:100%;
+    
 }
 
 button {
@@ -261,7 +262,6 @@ input#toggle-key{
 }
 
 .img {
-    
 }
 
 h1 {
@@ -279,7 +279,7 @@ h1 {
 h2 {
     color:#777;
     display:block;
-    font-size:2rem;
+    font-size:2.66rem;
     font-weight:100;
     
     padding: 0 2rem;
