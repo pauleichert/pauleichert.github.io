@@ -170,11 +170,11 @@ input#toggle-key{
 }
 
 .preview#one {
-    margin-right:none
+    margin-right:none;
 }
 
 .preview#two {
-    
+    margin-left:none;
 }
 
 .preview#three {
@@ -182,7 +182,7 @@ input#toggle-key{
 }
 
 .preview#four {
-    
+    margin-left:none;
 }
 
 .rollover-wrapper {
