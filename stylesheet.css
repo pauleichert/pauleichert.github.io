@@ -222,8 +222,8 @@ input#toggle-key{
 }
 .port-container img {
     margin:2rem;
-    width:auto; height:auto;
-    max-width:425px; max-height:425px;
+    width:100%;height:auto;
+    max-width:425px;max-height:425px;
     box-shadow: .1rem 0rem .8rem #efefef;
 }
 
