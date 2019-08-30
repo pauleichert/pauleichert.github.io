@@ -215,6 +215,17 @@ input#toggle-key{
     
 }
 
+.port-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.port-container img {
+    margin:2rem;
+    max-width:450px;
+    box-shadow: .1rem 0rem .8rem #efefef;
+}
+
 /*creates grid display for screen sizes over 768 pixels*/
 @media only screen and (min-width: 768px) {
     
@@ -235,7 +246,7 @@ input#toggle-key{
     }
 
     .preview#two {
-        
+        margin-left:none;
     }
 
     .preview#three {
@@ -243,7 +254,7 @@ input#toggle-key{
     }
 
     .preview#four {
-    
+        margin-left:none;
     }
 
 
