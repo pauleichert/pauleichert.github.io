@@ -219,10 +219,11 @@ input#toggle-key{
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
+    align-items:center;
 }
 .port-container img {
     margin:2rem;
-    width:100%;height:auto;
+    width:100%;height:100%;
     max-width:425px;max-height:425px;
     box-shadow: .1rem 0rem .8rem #efefef;
 }
