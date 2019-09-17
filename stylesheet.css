@@ -145,7 +145,9 @@ input#toggle-key{
     display:block;
     position:static;
     background-color:none;
-    margin-top:15vh;margin-left:auto;margin-right:auto;
+    margin-top:15vh;
+    margin-left:auto; margin-right:auto;
+    
 }
 
 .content-column {
@@ -153,37 +155,23 @@ input#toggle-key{
     flex-direction:column;
     align-content:center;
     justify-content:center;
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
 }
 
-.row {
+.content-row {
     display:block;
+    justify-content:center;
 }
 
 .preview {
     display:block;
     position:relative;
-    margin:auto;
-    width:100vw;height:100vw;
-    max-width:550px;max-height:550px;
-    margin-bottom:3rem;
+    width: 100vw;height:100vw;
+    float:none;clear:both;
+    margin: 1.5rem 0 1.5rem 0
 }
 
-.preview#one {
-    margin-right:none;
-}
 
-.preview#two {
-    margin-left:none;
-}
-
-.preview#three {
-    margin-right:none;
-}
-
-.preview#four {
-    margin-left:none;
-}
 
 .rollover-wrapper {
     position:absolute;
@@ -217,49 +205,93 @@ input#toggle-key{
 
 .port-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content:center;
     align-items:center;
+    background-color:#fff999;
 }
 .port-container img {
     margin:2rem;
-    width:100%;height:100%;
-    max-width:425px;max-height:425px;
-    box-shadow: .1rem 0rem .8rem #efefef;
+    object-fit:contain;
+
+}
+
+/*column based page layout*/
+
+.row {
+    clear:both;
+    max-width:1040px;
+    margin: auto;
+}
+
+[class^="col-"] {
+    width:100%;
+    display:inline-block;
+    list-style:none;
+    position:relative;
+}
+
+[class^="col-"] img {
+    margin-left:none;margin-right:none;
+    width:inherit;
+}
+
+p.spacer {
+    display:none;
 }
 
 /*creates grid display for screen sizes over 768 pixels*/
 @media only screen and (min-width: 768px) {
     
-    .row {
+    .content-row {
         display:flex !important;
+        
     }
     
     .wrapper {
         width:90vw;
+        
     }
     
     .preview {
-        width:40vw; height:40vw;
+    display:block;
+    position:relative;
+    width:40vw;height:40vw;
+    float:none;clear:both;
+    margin: 1.5rem
+}
+    .row {
+        margin:2rem auto;
     }
     
-    .preview#one {
-        margin-right:3rem;
+    [class^="col-"] {
+        float: left;
+        list-style:none;
+        position:relative;
+        
+    }
+    
+    [class^="col-"] img {
+        width:100%; height:auto;
+        padding: 2rem 1rem;
+    }
+    
+    .nomarg {
+       margin:0 0 !important; 
+        
     }
 
-    .preview#two {
-        margin-left:none;
+    .col-1 {width: 16.66%}
+    .col-2 {width: 33.33%}
+    .col-3 {width: 50%}
+    .col-4 {width: 66.66%}
+    .col-5 {width: 83.33%}
+    .col-6 {width: 100%; margin: 0}
+    
+    
+    p.spacer {
+        display:block;
     }
-
-    .preview#three {
-        margin-right:3rem;
-    }
-
-    .preview#four {
-        margin-left:none;
-    }
-
-
 }
 
 /*styling for individual pages*/
@@ -274,8 +306,6 @@ input#toggle-key{
     text-align:center;
 }
 
-.img {
-}
 
 h1 {
     color:#000;
@@ -314,6 +344,5 @@ p {
     text-align:left;
 }
 
-.port-image {
-    
-}
+
+
