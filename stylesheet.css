@@ -53,6 +53,9 @@ a:hover {
 @font-face {
   font-family: myGeorgiaItalic;
   src: url("resource/font/Georgia Italic.ttf"); }
+.rot45 {
+  transform: rotate(45deg); }
+
 p, .lb-caption, .lb-number {
   font-family: 'myGeorgia', 'georgia', serif;
   line-height: 24px;
