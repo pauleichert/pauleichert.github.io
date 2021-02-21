@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* CSS Document */
+.flex-card {
+	display:flex;
+	flex-direction:column;
+	width:100%;
+	border: 1.5px solid #bbb;
+	transition: border-color 75ms linear;
+	padding:15px;
+	margin-bottom:30px;
+
+}
+
+.flex-card:hover {
+	border-color:#555;
+}
+
+.flex-card-item {
+	display:block;
+	height:50%;
+}

@@ -1,0 +1,309 @@
+/* Scss Document */
+/* Scss Document */
+
+
+
+
+$def : 16px;
+$int1 : 0.618rem;
+$int2 : 1.618rem;
+$int3 : 2.618rem;
+$int4 : 4.236rem;
+$int5 : 6.854rem;
+$int6 : 11.089rem;
+$int7 : 17.942rem;
+$int8 : 29.03rem;
+
+$red : #f00;
+$blk : #222;
+
+$lgr : #bbb;
+$gry : #555;
+
+$bg  : #f0f0f0;
+/*colors*/
+.noBg {background: none!important;border-bottom: none;}
+
+
+.bg-blk {
+	background-color: $blk;
+	color: #fff;
+}
+
+.bg-grey {
+	background-color: $gry;
+}
+
+.bg-red {
+	background-color: $red;
+}
+
+.hl-red p:selection {
+	background-color: $red;
+}
+
+.red {color:#f00!important;}
+/*fonts*/
+
+* {
+	font-family:"neueMontreal",sans-serif;
+	font-size:16px;
+}
+
+a {color:$blk!important;transition: color 75ms linear;}
+a:hover {text-decoration: none!important;
+	color:$gry!important;border-bottom: 1.5px solid $gry!important;}
+.myName:hover {border-bottom: none!important;}
+@font-face {
+  font-family: neueMontreal;
+  src: url("resource/font/NeueMontreal-Regular.otf");
+}
+@font-face{
+	font-family: neueMontrealBold;
+	src: url("resource/font/NeueMontreal-Bold.otf");
+}
+@font-face {
+	font-family: myGeorgia;
+	src: url("resource/font/Georgia.ttf")
+}
+@font-face {
+	font-family: myGeorgiaBold;
+	src: url("resource/font/Georgia Bold.ttf")
+}
+@font-face {
+	font-family: myGeorgiaItalic;
+	src: url("resource/font/Georgia Italic.ttf")
+}
+
+
+
+
+
+p, .lb-caption, .lb-number {
+	font-family: 'myGeorgia', 'georgia', serif;
+	line-height: 24px;
+	margin-bottom: $def;
+}
+
+p strong {font-family: 'myGeorgiaBold';}
+
+p em {font-family: 'myGeorgiaItalic';}
+
+h1, h2, h3, h4, h5 {
+  margin:1.5rem 0;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h1,  .nav-overlay, #arrow, #hamburger  {font-size: $int4;}
+nav, h2, .nav-item {font-size: $int3;}
+h3, p strong {font-size: $int2;}
+p {font-size:$def;}
+
+@media (max-width: 992px)
+{
+	h1,  .nav-overlay, #arrow {font-size: $int3!important;}
+	h2 {font-size: $int2!important;}
+}
+
+
+h1,h2{font-family: 'neueMontrealBold', sans-serif;}
+h3 {font-family: 'neueMontreal', sans-serif;}
+
+h1,h2,h3,p {transition: 95ms linear; color:$blk!important;}
+
+.contentBottom {
+	display:flex;
+	align-items: flex-end;
+	flex-direction: row;
+}
+
+
+
+
+/*content*/
+footer {display:block;position:relative;background-color:$blk;width:100vw;height:25vh;color:#fff;text-align: center;padding:30px 0;bottom:0;}
+footer p {font-size:$def; font-family:'neueMontreal', sans-serif!important; color:#fff!important;}
+footer a {color:#fff!important;}
+
+body {background-color:$bg}
+
+nav {
+	width:100vw;
+	font-family:'neueMontreal',sans-serif;
+}
+nav a {
+	color:$blk;
+	
+	
+}
+
+.row {padding-bottom:30px;overflow: hidden;}
+
+.container {
+	img {
+		margin-top:30px;
+		display:block;
+		width:100%;
+	}
+}
+
+
+hr {
+	border-top: 1px solid $lgr!important;
+	margin: -10px 0 10px;
+}
+
+.nav-container {
+	padding:30px 15px 15px;
+	line-height: normal;
+	font-family:neueMontreal, 'sans serif';
+	z-index:100;
+	background-blend-mode: color-burn;
+	width:100vw;
+	background-color:$bg;
+	border-bottom: 1px solid $lgr;
+}
+
+.nav-container ul {
+	float:right;
+}
+
+
+.nav-overlay {
+	display: none;
+	background-color:rgba(255,255,255,.85);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	width:100vw;height:100vh;
+	justify-content: center;
+	align-items:center;
+	z-index:99;
+	position:fixed;
+	color:$blk;
+	transition: 95ms linear;
+}
+
+@media (min-width: 992px)
+{
+	.nav-overlay {display:none!important;}
+}
+
+
+
+
+.nav-overlay ul li {
+	color:$blk;
+}
+.nav-overlay ul li:hover {
+	color:$blk;
+}
+
+.nav-item {
+	color:$blk!important;
+}
+
+.fixed {
+	position: fixed;
+	display:flex;
+	
+	
+}
+
+.fixed.container {
+	z-index:100;
+	left:0;right:0;
+}
+
+.hero {
+	width:100vw;height:100vh;
+	position:relative;
+	display:flex;
+	top:0;
+}
+
+html, body {
+	height:100vh;
+}
+
+.portfolio {
+	
+}
+
+
+.sm-hide {
+	display:none;
+}
+
+
+li.nav-item {
+	float:left;
+	opacity:1!important;
+}
+
+.nav-overlay li.nav-item {
+	float:none!important;
+	margin: 15px 0;
+}
+
+.nav-overlay ul.nav-list {
+	text-align: center;
+}
+
+#hamburger {
+	display:block;
+	color:$blk;
+	cursor:pointer;
+	content: "+";
+	z-index:100;
+	transition: 95ms ease-in-out;
+	line-height: .8;
+}
+
+.sl {
+	color:$blk;
+	margin:0 10px;
+	user-select: none; 
+}
+
+#main {
+	min-height: 100vh;
+	padding:15vh 0;
+}
+
+.wi {
+	box-shadow:  0px 0px 15px #ccc;
+	transition: 95ms linear;
+}
+.bg-blk .wi {
+	box-shadow:  0px 0px 15px #444!important;
+}
+
+.bg-grey .wi {
+	box-shadow:  0px 0px 15px #444!important;
+}
+.wi:hover {
+	transform: rotate(0) !important;
+	box-shadow:  0px 0px 0px $bg;
+}
+
+.spread {
+	padding: 0 15px !important;
+}
+
+.half {width:50%!important;margin: 0 auto;}
+
+.letter {width:77.272%!important;margin: 0 auto;}
+
+.tabloid {width:64.7%!important;margin: 0 auto;}
+
+/*helper class*/
+
+.max-h-50 {
+	max-height:50vh;
+}
+
