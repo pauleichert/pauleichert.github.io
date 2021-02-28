@@ -15,12 +15,12 @@ $int7 : 17.942rem;
 $int8 : 29.03rem;
 
 $red : #f00;
-$blk : #222;
+$blk : #f0f0f0;
 
-$lgr : #bbb;
-$gry : #555;
+$lgr : #555;
+$gry : #bbb;
 
-$bg  : #f0f0f0;
+$bg  : #222;
 /*colors*/
 .noBg {background: none!important;border-bottom: none;}
 
@@ -128,7 +128,7 @@ h1,h2,h3,p {transition: 95ms linear; color:$blk!important;}
 
 
 /*content*/
-footer {display:block;position:relative;background-color:$blk;width:100vw;height:25vh;color:#fff;text-align: center;padding:30px 0;bottom:0;}
+footer {display:block;position:relative;background-color:$bg;width:100vw;height:25vh;color:#fff;text-align: center;padding:30px 0;bottom:0;}
 footer p {font-size:$def; font-family:'neueMontreal', sans-serif!important; color:#fff!important;}
 footer a {color:#fff!important;}
 
@@ -278,7 +278,7 @@ li.nav-item {
 }
 
 .wi {
-	box-shadow:  0px 0px 15px #ccc;
+	box-shadow:  0px 0px 15px #444!important;
 	transition: 95ms linear;
 }
 .bg-blk .wi {
@@ -290,7 +290,7 @@ li.nav-item {
 }
 .wi:hover {
 	transform: rotate(0) !important;
-	box-shadow:  0px 0px 0px $bg;
+	box-shadow:  0px 0px 0px $bg!important;
 }
 
 .spread {

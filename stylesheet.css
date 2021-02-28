@@ -6,11 +6,11 @@
   border-bottom: none; }
 
 .bg-blk {
-  background-color: #222;
+  background-color: #f0f0f0;
   color: #fff; }
 
 .bg-grey {
-  background-color: #555; }
+  background-color: #bbb; }
 
 .bg-red {
   background-color: #f00; }
@@ -27,13 +27,13 @@
   font-size: 16px; }
 
 a {
-  color: #222 !important;
+  color: #f0f0f0 !important;
   transition: color 75ms linear; }
 
 a:hover {
   text-decoration: none !important;
-  color: #555 !important;
-  border-bottom: 1.5px solid #555 !important; }
+  color: #bbb !important;
+  border-bottom: 1.5px solid #bbb !important; }
 
 .myName:hover {
   border-bottom: none !important; }
@@ -101,7 +101,7 @@ h3 {
 
 h1, h2, h3, p {
   transition: 95ms linear;
-  color: #222 !important; }
+  color: #f0f0f0 !important; }
 
 .contentBottom {
   display: flex;
@@ -129,14 +129,14 @@ footer a {
   color: #fff !important; }
 
 body {
-  background-color: #f0f0f0; }
+  background-color: #222; }
 
 nav {
   width: 100vw;
   font-family: 'neueMontreal',sans-serif; }
 
 nav a {
-  color: #222; }
+  color: #f0f0f0; }
 
 .row {
   padding-bottom: 30px;
@@ -148,7 +148,7 @@ nav a {
   width: 100%; }
 
 hr {
-  border-top: 1px solid #bbb !important;
+  border-top: 1px solid #555 !important;
   margin: -10px 0 10px; }
 
 .nav-container {
@@ -158,8 +158,8 @@ hr {
   z-index: 100;
   background-blend-mode: color-burn;
   width: 100vw;
-  background-color: #f0f0f0;
-  border-bottom: 1px solid #bbb; }
+  background-color: #222;
+  border-bottom: 1px solid #555; }
 
 .nav-container ul {
   float: right; }
@@ -175,20 +175,20 @@ hr {
   align-items: center;
   z-index: 99;
   position: fixed;
-  color: #222;
+  color: #f0f0f0;
   transition: 95ms linear; }
 
 @media (min-width: 992px) {
   .nav-overlay {
     display: none !important; } }
 .nav-overlay ul li {
-  color: #222; }
+  color: #f0f0f0; }
 
 .nav-overlay ul li:hover {
-  color: #222; }
+  color: #f0f0f0; }
 
 .nav-item {
-  color: #222 !important; }
+  color: #f0f0f0 !important; }
 
 .fixed {
   position: fixed;
@@ -225,7 +225,7 @@ li.nav-item {
 
 #hamburger {
   display: block;
-  color: #222;
+  color: #f0f0f0;
   cursor: pointer;
   content: "+";
   z-index: 100;
@@ -233,7 +233,7 @@ li.nav-item {
   line-height: .8; }
 
 .sl {
-  color: #222;
+  color: #f0f0f0;
   margin: 0 10px;
   user-select: none; }
 
@@ -242,7 +242,7 @@ li.nav-item {
   padding: 15vh 0; }
 
 .wi {
-  box-shadow: 0px 0px 15px #ccc;
+  box-shadow: 0px 0px 15px #444 !important;
   transition: 95ms linear; }
 
 .bg-blk .wi {
@@ -253,7 +253,7 @@ li.nav-item {
 
 .wi:hover {
   transform: rotate(0) !important;
-  box-shadow: 0px 0px 0px #f0f0f0; }
+  box-shadow: 0px 0px 0px #222 !important; }
 
 .spread {
   padding: 0 15px !important; }
