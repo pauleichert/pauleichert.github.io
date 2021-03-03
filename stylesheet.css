@@ -56,6 +56,9 @@ a:hover {
 .rot45 {
   transform: rotate(45deg); }
 
+.black-txt {
+  color: #222 !important; }
+
 p, .lb-caption, .lb-number {
   font-family: 'myGeorgia', 'georgia', serif;
   line-height: 24px;
@@ -136,7 +139,10 @@ nav {
   font-family: 'neueMontreal',sans-serif; }
 
 nav a {
-  color: #f0f0f0; }
+  color: #222; }
+
+.nav-overlay a {
+  color: #222 !important; }
 
 .row {
   padding-bottom: 30px;
@@ -175,7 +181,7 @@ hr {
   align-items: center;
   z-index: 99;
   position: fixed;
-  color: #f0f0f0;
+  color: #222;
   transition: 95ms linear; }
 
 @media (min-width: 992px) {
